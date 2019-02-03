@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.hoblack.libaray.ui.BlurProgressImageView
+        android:id="@+id/blurProgressImageView"
+        android:layout_width="245dp"
+        android:layout_height="362dp"
+        android:layout_margin="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress_blurAlpha="0.6"
+        app:progress_blurRadius="10dp"
+        app:progress_color="@color/colorPrimary"
+        app:progress_gradRadius="10dp"
+        app:progress_image="@mipmap/test"
+        app:progress_showImage="true"
+        app:progress_value="80" />
+
+    <Switch
+        android:id="@+id/switchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:textOff="Show Color"
+        android:textOn="Show Image"
+        app:layout_constraintEnd_toEndOf="@id/blurProgressImageView"
+        app:layout_constraintTop_toBottomOf="@id/blurProgressImageView" />
+
+    <Switch
+        android:id="@+id/switchView_orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:textOff="Horizonal"
+        android:textOn="Vertical"
+        app:layout_constraintStart_toStartOf="@id/blurProgressImageView"
+        app:layout_constraintBottom_toTopOf="@id/blurProgressImageView" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/blurProgressImageView"
+        app:layout_constraintStart_toStartOf="@id/blurProgressImageView"
+        app:layout_constraintTop_toBottomOf="@id/switchView" />
+</android.support.constraint.ConstraintLayout>

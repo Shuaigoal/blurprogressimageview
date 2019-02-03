@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="BlurProgressImageView">
+        <attr name="progress_color" format="color" />
+        <attr name="progress_blurRadius" format="dimension" />
+        <attr name="progress_image" format="reference" />
+        <attr name="progress_blurAlpha" format="float" />
+        <attr name="progress_value" format="integer" />
+        <attr name="progress_showImage" format="boolean" />
+        <attr name="progress_gradRadius" format="dimension" />
+    </declare-styleable>
+</resources>
